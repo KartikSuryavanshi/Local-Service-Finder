@@ -81,15 +81,23 @@ if ($_FILES['aadhar_card']['error'] == UPLOAD_ERR_OK) {
         }
 
         $stmt->bind_param("sssss", $providername, $email, $hashed_password, $uploadFile, $uploadFileAadhar);
-        if ($stmt->execute()) {
-            echo "Service provider registered successfully.";
-            $_SESSION['provider_email'] = $email; // Save provider email in session
+        try {
+            if ($stmt->execute()) {
+                echo "Service provider registered successfully.";
+                $_SESSION['provider_email'] = $email; // Save provider email in session
 
-            // Redirect to provider dashboard
-            header("Location: provider_dashboard.php");
-            exit();
-        } else {
-            echo "Error: " . $stmt->error;
+                // Redirect to provider dashboard
+                header("Location: provider_dashboard.php");
+                exit();
+            } else {
+                echo "Unable to register provider. Please try again.";
+            }
+        } catch (mysqli_sql_exception $e) {
+            if ((int)$e->getCode() === 1062) {
+                echo "Provider name or email already exists. Please use different details.";
+            } else {
+                echo "Database error while registering provider. Please try again.";
+            }
         }
         $stmt->close();
     } 
@@ -117,15 +125,23 @@ if ($_FILES['aadhar_card']['error'] == UPLOAD_ERR_OK) {
         }
 
         $stmt->bind_param("sss", $username, $email, $hashed_password);
-        if ($stmt->execute()) {
-            echo "User registered successfully.";
-            $_SESSION['user_email'] = $email; // Save user email in session
+        try {
+            if ($stmt->execute()) {
+                echo "User registered successfully.";
+                $_SESSION['user_email'] = $email; // Save user email in session
 
-            // Redirect to user dashboard
-            header("Location: sidebar.php");
-            exit();
-        } else {
-            echo "Error: " . $stmt->error;
+                // Redirect to user dashboard
+                header("Location: sidebar.php");
+                exit();
+            } else {
+                echo "Unable to register user. Please try again.";
+            }
+        } catch (mysqli_sql_exception $e) {
+            if ((int)$e->getCode() === 1062) {
+                echo "Username or email already exists. Please use different details.";
+            } else {
+                echo "Database error while registering user. Please try again.";
+            }
         }
         $stmt->close();
     } 
