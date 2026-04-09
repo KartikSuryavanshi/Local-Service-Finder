@@ -1,8 +1,4 @@
 # Local Service Finder
-
-## Author
-Kartik Suryavanshi  
-
 ---
 
 ## Project Overview
@@ -46,15 +42,15 @@ The platform allows users to **search services by category and location**, **boo
 
 ## Tech Stack
 
-### 🔹 Frontend
+### Frontend
 - HTML
 - CSS
 - JavaScript
 
-### 🔹 Backend
+### Backend
 - PHP
 
-### 🔹 Database
+### Database
 - SQLite (`sql.db`)
 
 ---
