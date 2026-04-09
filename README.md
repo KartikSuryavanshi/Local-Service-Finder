@@ -1,20 +1,20 @@
-# 🏠 Local Service Finder
+# Local Service Finder
 
-## 👤 Author
+## Author
 Kartik Suryavanshi  
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 **Local Service Finder** is a **full-stack web application** designed to connect users with nearby service providers such as plumbers, electricians, cleaners, and other local professionals.
 
 The platform allows users to **search services by category and location**, **book services**, **manage bookings**, **give feedback**, and **communicate with service providers**, while providers can manage requests, track performance, and handle customer interactions through a dedicated dashboard.
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
-### 👥 User Features
+### User Features
 - User registration & login (OTP verification)
 - Browse services by category
 - Search services by location
@@ -25,7 +25,7 @@ The platform allows users to **search services by category and location**, **boo
 - Send messages to providers
 - Submit & view feedback
 
-### 🧑‍🔧 Service Provider Features
+### Service Provider Features
 - Provider registration & login
 - Provider dashboard
 - Accept / reject service bookings
@@ -34,7 +34,7 @@ The platform allows users to **search services by category and location**, **boo
 - View customer feedback
 - Messaging system with users
 
-### 🛠 Admin / System Features
+### Admin / System Features
 - Category management
 - Service management
 - Booking approval workflow
@@ -44,7 +44,7 @@ The platform allows users to **search services by category and location**, **boo
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### 🔹 Frontend
 - HTML
