@@ -1,12 +1,10 @@
 # Local Service Finder
----
 
 ## Project Overview
 **Local Service Finder** is a **full-stack web application** designed to connect users with nearby service providers such as plumbers, electricians, cleaners, and other local professionals.
 
 The platform allows users to **search services by category and location**, **book services**, **manage bookings**, **give feedback**, and **communicate with service providers**, while providers can manage requests, track performance, and handle customer interactions through a dedicated dashboard.
 
----
 
 ## Key Features
 
@@ -38,8 +36,6 @@ The platform allows users to **search services by category and location**, **boo
 - Secure authentication
 - Database-backed operations
 
----
-
 ## Tech Stack
 
 ### Frontend
@@ -53,19 +49,13 @@ The platform allows users to **search services by category and location**, **boo
 ### Database
 - SQLite (`sql.db`)
 
----
-
-
 
 A PHP/MySQL web application for finding and booking local services.
-
----
 
 ## Requirements
 
 - [XAMPP for macOS](https://www.apachefriends.org/download.html)
 
----
 
 ## How to Run on macOS
 
@@ -99,7 +89,6 @@ Place the project folder (`admin1`) inside:
 
 - Go to: `http://localhost/admin1/admin/signin.php`
 
----
 
 ## Run Fully via Terminal
 
@@ -122,8 +111,6 @@ Open in browser:
 open http://localhost/admin1/admin/signin.php
 open http://localhost/phpmyadmin
 ```
-
----
 
 ## Troubleshooting
 
